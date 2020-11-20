@@ -1,0 +1,48 @@
+*
+	box-sizing: border-box
+	margin: 0
+	font-family: 'Gotha', sans-serif
+a
+	text-decoration: none
+	cursor: default
+	outline: none
+input, button
+	&:focus
+		outline: none
+button
+	color: #fff
+	border: none
+	text-transform: uppercase
+.slick-slide
+	outline: none
+.bg-dark
+	position: relative
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.8)
+		z-index: -1
+
+@media (min-width: 1200px)
+	.container
+		max-width: 940px
+
+@import 'header'
+@import 'feedback'
+@import 'product'
+@import 'callback'
+@import 'info'
+@import 'footer'
+@import 'modal'
+@import 'min-768'
+@import 'min-992'
+@import 'max-1200'
+@import 'max-991'
+@import 'max-767'
+@import 'max-576'

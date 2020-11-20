@@ -1,0 +1,101 @@
+.header
+	background-color: #292929
+	padding-top: 55px
+	padding-bottom: 77px
+	border-bottom: 1px solid rgb( 76, 76, 76 )
+	position: relative
+	&-head
+		display: flex
+		justify-content: space-between
+		&__callback
+			margin-top: 16px
+			margin-bottom: 120px
+			display: flex
+			justify-content: flex-end
+			a
+				color: #ff3469
+				font-size: 16px
+				font-weight: 400
+				padding-bottom: 4px
+				border-bottom: 1px solid #ff3469
+		&__block
+			display: flex
+			align-items: flex-end
+		&__logo
+			margin-right: 40px
+		&__text
+			font-size: 12px
+			color: #979797
+			font-weight: 300
+			letter-spacing: 0.12px
+			span
+				color: #ff3469
+				font-weight: 500
+		&__phone
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 7px
+			a
+				color: #fff
+				font-size: 20px
+				font-weight: 500
+		&__info
+			color: #d5d5d5
+			font-size: 12px
+			font-weight: 400
+	&-main
+		text-align: center
+		position: relative
+		&__title
+			font-size: 34px
+			font-weight: 500
+			color: #fff
+			margin-bottom: 30px
+			text-transform: uppercase
+		&__subtitle
+			font-size: 18px
+			color: #a4a4a4
+			text-transform: uppercase
+			margin-bottom: 95px
+			font-weight: 300
+			span
+				color: #fff
+				font-weight: 500
+		&__text
+			color: #d5d5d5
+			font-size: 19px
+			font-weight: 400
+			margin-bottom: 39px
+			span
+				color: #fff
+				font-weight: 500
+		&__button
+			font-size: 18px
+			font-weight: 500
+			background-color: #ff2e55
+			padding: 25px 65px
+			border: 3px solid #ff2e55
+		&__slider
+			margin-bottom: 83px
+		&__item
+			position: relative
+			img
+				margin: 0 auto
+.slider-arrow
+	width: 8px
+	height: 14px
+	z-index: 1040
+	&__main
+		&_left
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: -40px
+			background: url(../img/header/arrow-left.png) center no-repeat
+		&_right
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: -40px
+			background: url(../img/header/arrow-right.png) center no-repeat
+	

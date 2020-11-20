@@ -1,0 +1,31 @@
+@media (min-width: 768px)
+	.hidden-after_mobile
+		display: none
+	.header
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			right: 35%
+			width: 39px
+			height: 24px
+			background: url(../img/header/header-leaf__top.png) center no-repeat
+		&-main
+			&:before
+				content: ''
+				display: flex
+				position: absolute
+				top: -70px
+				left: -140px
+				width: 93px
+				height: 153px
+				background: url(../img/header/left-leaf.png) center no-repeat
+			&:after
+				content: ''
+				display: flex
+				position: absolute
+				top: 120px
+				right: -130px
+				width: 93px
+				height: 153px
+				background: url(../img/header/right-leaf.png) center no-repeat
