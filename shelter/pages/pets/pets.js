@@ -21,6 +21,22 @@ inactiveLink.forEach(el => {
   el.addEventListener('click', e => e.preventDefault())
 })
 
+const clientWidth = () => {
+  const desktopWidth = document.documentElement.clientWidth
+  let num
+  switch(true) {
+    case desktopWidth > 767 && desktopWidth < 1280:
+      num = 8
+      break
+    case desktopWidth > 319 && desktopWidth < 768:
+      num = 16
+      break
+    default:
+      num = 6
+  }
+  return num
+}
+
 let pets = []
 let fullPetsList = []
 const request = new XMLHttpRequest();
@@ -30,8 +46,9 @@ request.onload = () => {
 
   fullPetsList = (() => {
     let tempArr = []
+    const width = clientWidth()
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < width; i++) {
       const newPets = pets
 
       for (let j = pets.length; j > 0; j--) {
@@ -63,41 +80,88 @@ request.onload = () => {
 }
 
 
-//  пагинация
+//  pagination
 const pgnStart = document.querySelector('.pagination__start')
 const pgnPrev = document.querySelector('.pagination__prev')
 const pgnNext = document.querySelector('.pagination__next')
 const pgnEnd = document.querySelector('.pagination__end')
 const pgnCurr = document.querySelector('.pagination__current')
 
-let page = 0
+let page = 1
 
 pgnNext.addEventListener('click', () => {
   changePage('next')
+  createPets(fullPetsList)
 })
-
+pgnEnd.addEventListener('click', () => {
+  changePage('end')
+  createPets(fullPetsList)
+})
+pgnPrev.addEventListener('click', () => {
+  changePage('prev')
+  createPets(fullPetsList)
+})
+pgnStart.addEventListener('click', () => {
+  changePage('start')
+  createPets(fullPetsList)
+})
 
 const changePage = (val) => {
   if (val === 'next') {
-    if (page < (fullPetsList.length / 6)) ++page
+    if (page < (fullPetsList.length / pets.length)) ++page
     pgnCurr.textContent = page
+    if (page === (fullPetsList.length / pets.length)) {
+      pgnNext.setAttribute('disabled', 'true')
+      pgnEnd.setAttribute('disabled', 'true')
+    }
+    if (pgnCurr.textContent > 1) {
+      pgnPrev.removeAttribute('disabled')
+      pgnStart.removeAttribute('disabled')
+    }
+  }
 
+  if (val === 'end') {
+    page = fullPetsList.length / pets.length
+    pgnCurr.textContent = fullPetsList.length / pets.length
+    pgnPrev.removeAttribute('disabled')
+    pgnStart.removeAttribute('disabled')
+    pgnNext.setAttribute('disabled', 'true')
+    pgnEnd.setAttribute('disabled', 'true')
+  }
+
+  if (val === 'prev') {
+    if (page > 1) --page
+    pgnCurr.textContent = page
+    if (page === 1) {
+      pgnPrev.setAttribute('disabled', 'true')
+      pgnStart.setAttribute('disabled', 'true')
+    }
+    if (pgnCurr.textContent < fullPetsList.length / pets.length) {
+      pgnNext.removeAttribute('disabled')
+      pgnEnd.removeAttribute('disabled')
+    }
+  }
+
+  if (val === 'start') {
+    page = 1
+    pgnCurr.textContent = page
+    pgnNext.removeAttribute('disabled')
+    pgnEnd.removeAttribute('disabled')
+    pgnStart.setAttribute('disabled', 'true')
+    pgnPrev.setAttribute('disabled', 'true')
   }
 }
 
-
 const createPets = (petsList) => {
-  pgnCurr.textContent = ++page
+  const width = clientWidth()
   const elem = document.querySelector('#pets')
   const elements = createElements(petsList)
-  // elements.forEach(el => elem.appendChild(el))
-  let tempArr = []  // 8
-  for (let i = 0; i < 8; i++) {
+
+  pgnCurr.textContent = page
+  elem.innerHTML = ''
+  for (let i = (page - 1) * (fullPetsList.length / width); i < page * (fullPetsList.length / width); i++) {
     elem.appendChild(elements[i])
-    // tempArr.push(elements[i])
-    // if (tempArr.length < fullPetsList.length / 6) {
-    //   elem.appendChild(tempArr)
-    // }
+    setTimeout(() => elements[i].style.opacity = '1', 100)
   }
 }
 
@@ -109,7 +173,7 @@ const createElements = (petsList) => {
     const img = document.createElement('img')
     const name = document.createElement('div')
     const btn = document.createElement('button')
-    const nameContent = document.createTextNode('Name')
+    const nameContent = document.createTextNode(petsList[i].name)
     const btnContent = document.createTextNode('Learn more')
     card.classList.add('pets__card')
     imgWrap.classList.add('pets__img')
@@ -133,16 +197,14 @@ const createElements = (petsList) => {
 }
 
 const sort863 = (list) => {
-  list = sort6recursively(list)
-
-  return list
+  return sort6recursively(list)
 }
 
 const sort6recursively = (list) => {
-
   const length = list.length
+  const width = clientWidth()
 
-  for (let i = 0; i < (length / 6); i++) {
+  for (let i = 0; i < (length / width); i++) {
     const stepList = list.slice((i * 6), (i * 6) + 6)
 
     for (let j = 0; j < 6; j++) {
@@ -238,4 +300,5 @@ function closePopup() {
 }
 
 request.send()
+
 
