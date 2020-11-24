@@ -1,0 +1,106 @@
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.person {
+  display: flex;
+  padding: 0 0 0 100px;
+  margin: 0 0 50px;
+}
+.person__photo {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 60px 0 0;
+  border-radius: 50%;
+}
+.person__photo > img {
+  width: 100%;
+}
+.person__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cv {
+  padding: 50px 0;
+}
+.cv__wrap {
+  display: flex;
+}
+.cv__left {
+  width: 30%;
+  margin-right: 40px;
+}
+.person__name {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.person__job {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.contacts {
+  width: 100%;
+  background: #f0f0f0;
+  margin-bottom: 30px;
+}
+.title {
+  background: #ccc;
+  margin-top: 0;
+  padding: 0 0 0 20px;
+}
+.title--small {
+  background: unset;
+  font-size: 16px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 40px 20px 40px;
+}
+.list__item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.list__item:last-child {
+  margin-bottom: 0;
+}
+.list__item a {
+  text-decoration: none;
+  color: #3b35e6;
+  transition: .3s all ease;
+}
+.list__item a:hover {
+  color: #a49999;
+}
+.skills {
+  background: #f0f0f0;
+}
+.skills__stack {
+  padding: 0 40px 20px 40px;
+  font-style: italic;
+  line-height: 25px;
+}
+.cv__right {
+  width: 70%;
+  background: #49bfbe;
+}
+
+.cv__text {
+  padding: 0 20px;
+}
+.material-icons {
+  margin-right: 10px;
+}
