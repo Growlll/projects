@@ -361,7 +361,7 @@ a.inactive:hover {
   }
 }
 
-@media (max-height: 600px) {
+@media (max-width: 767px) and (max-height: 600px) {
   .menu--mobile .menu__item {
     margin: 0 0 20px 0;
   }
