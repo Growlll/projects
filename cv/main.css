@@ -4,6 +4,24 @@ html {
 }
 * {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("react-icon1.svg") top left no-repeat;
+  background-size: 50% 50%;
+  padding: 0 20px;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: #3b35e6;
+   border-bottom: 1px solid transparent;
+   transition: all .3s linear;
+ }
+a:hover {
+  color: #a49999;
+  border-bottom: 1px solid #a49999;
 }
 .container {
   width: 1240px;
@@ -34,6 +52,8 @@ html {
 }
 .cv__wrap {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .cv__left {
   width: 30%;
@@ -50,13 +70,38 @@ html {
 }
 .contacts {
   width: 100%;
-  background: #f0f0f0;
+  /*background: rgba(225,225,225,0.5);*/
   margin-bottom: 30px;
 }
+
+.history > div {
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 10px;
+}
+.history__year {
+  width: 25%;
+  background: #dddddd;
+  padding: 5px 10px;
+}
+.history__info {
+  width: 75%;
+  background: azure;
+  padding: 5px 10px;
+}
+.history-list li {
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+
 .title {
-  background: #ccc;
   margin-top: 0;
-  padding: 0 0 0 20px;
+  padding: 5px 0;
+  border-bottom: 1px solid #61dafb;
+  text-transform: uppercase;
 }
 .title--small {
   background: unset;
@@ -66,7 +111,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 40px 20px 40px;
+  padding: 20px 0;
 }
 .list__item {
   display: flex;
@@ -79,28 +124,43 @@ html {
 }
 .list__item a {
   text-decoration: none;
-  color: #3b35e6;
-  transition: .3s all ease;
 }
-.list__item a:hover {
-  color: #a49999;
+.list__info {
+  font-size: 12px;
+  color: #61dafb;
+}
+i {
+  color: #3b35e6;
+}
+.material-icons__send {
+  transform: rotate(-30deg);
 }
 .skills {
-  background: #f0f0f0;
 }
 .skills__stack {
-  padding: 0 40px 20px 40px;
-  font-style: italic;
-  line-height: 25px;
+  padding: 20px 0;
+  display: flex;
+}
+.skills__list {
+  width: 50%;
+  padding-left: 16px;
+}
+.skills__list > li {
+  margin-bottom: 10px;
+  list-style-type: square;
 }
 .cv__right {
-  width: 70%;
-  background: #49bfbe;
+  width: 60%;
 }
-
 .cv__text {
-  padding: 0 20px;
+  padding: 20px 0;
 }
 .material-icons {
   margin-right: 10px;
 }
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
