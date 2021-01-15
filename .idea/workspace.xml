@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b07ce905-7e18-4986-8c78-cab43fb31b3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/src/scss/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/src/scss/menu/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/src/scss/price/price.scss" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/src/scss/price/price.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT-NAME/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT-NAME/src/scss/style.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CPS" />
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/PROJECT-NAME/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
