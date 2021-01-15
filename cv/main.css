@@ -56,8 +56,10 @@ a:hover {
   flex-wrap: wrap;
 }
 .cv__left {
-  width: 30%;
+  width: 35%;
   margin-right: 40px;
+  background: rgba(240, 255, 255, .5);
+  padding: 10px;
 }
 .person__name {
   font-size: 42px;
@@ -80,13 +82,13 @@ a:hover {
   margin-bottom: 10px;
 }
 .history__year {
-  width: 25%;
-  background: #dddddd;
+  width: 30%;
   padding: 5px 10px;
+  border-right: 1px solid grey;
+  background: azure;
 }
 .history__info {
-  width: 75%;
-  background: azure;
+  width: 70%;
   padding: 5px 10px;
 }
 .history-list li {
