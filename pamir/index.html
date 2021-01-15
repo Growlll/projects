@@ -513,7 +513,7 @@
 <div id="news" class="news">
   <div class="container">
     <div class="news-head">
-      <button class="button button-news" onclick="javascript:window.location='news.php'">Архив новостей</button>
+      <button class="button button-news" onclick="javascript:window.location='news.html'">Архив новостей</button>
     </div>
 
 
@@ -536,7 +536,7 @@
             принимает участи в международной выставке вертолетной индустрии HeliRussia 2017...
           </div>
 
-          <a href="news.php" class="news-more">Подробнее</a>
+          <a href="news.html" class="news-more">Подробнее</a>
 
         </div>
 
@@ -564,7 +564,7 @@
             с 10 до 18 часов...
           </div>
 
-          <a href="news.php" class="news-more">
+          <a href="news.html" class="news-more">
             Подробнее
           </a>
 
@@ -592,7 +592,7 @@
             проявили большой интерес к нашей продукции...
           </div>
 
-          <a href="news.php" class="news-more">Подробнее</a>
+          <a href="news.html" class="news-more">Подробнее</a>
 
         </div>
 
@@ -602,7 +602,7 @@
 
 
     <div class="other">
-      <button class="button button-other" onclick="javascript:window.location='news.php'">
+      <button class="button button-other" onclick="javascript:window.location='news.html'">
         все новости компании
       </button>
     </div>
@@ -838,7 +838,7 @@
         </div>
 
         <div class="footer-map">
-          <a href="contacts.php">
+          <a href="contacts.html">
             <img src="img/footer/location.png" alt="Location">
             На карте ›
           </a>
@@ -904,7 +904,7 @@
         </div>
 
         <div class="footer-map">
-          <a href="contacts.php">
+          <a href="contacts.html">
             <img src="img/footer/location.png" alt="Location">
             На карте ›</a>
         </div>
@@ -1068,7 +1068,11 @@
       alert("Сообщение успешно отправлено");
       $("form").trigger("reset");
     });
-    return false;
+    return function () {
+      $(this).find("input").val("");
+      alert("Сообщение успешно отправлено");
+      $("form").trigger("reset");
+    };
   });
 </script>
 
