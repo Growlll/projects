@@ -1,0 +1,114 @@
+.main
+	max-height: 584px
+	position: relative
+	&-slider
+		height: 100%
+		&__bg-1
+			height: 100%
+			background: #ccc url(../img/main/main-slide-1.jpg) center no-repeat
+			background-size: cover
+		&__bg-2
+			height: 100%
+			background: #ccc url(../img/main/main-slide-2.jpg) center no-repeat
+			background-size: cover
+		&__bg-3
+			height: 100%
+			background: #ccc url(../img/main/main-slide-3.jpg) center no-repeat
+			background-size: cover
+		&__bg-4
+			height: 100%
+			background: #ccc url(../img/main/main-slide-4.jpg) center no-repeat
+			background-size: cover
+		&__bg-5
+			height: 100%
+			background: #ccc url(../img/main/main-slide-5.jpg) center no-repeat
+			background-size: cover
+	&-text
+		&__title
+			padding-top: 194px
+			margin: 0
+			text-shadow: 1px 1px 0 rgba(39, 39, 39, 0.2)
+			color: #ffffff
+			font-family: "Helvetica"
+			font-size: 60px
+			font-weight: 400
+			line-height: 72px
+			text-transform: uppercase
+			letter-spacing: 0.6px
+		&__subtitle
+			color: #ffffff
+			font-family: "Proxima"
+			font-size: 24px
+			font-weight: 400
+			letter-spacing: 0.24px
+			margin-top: 30px
+			margin-bottom: 40px
+.button
+	&-main
+		padding: 27px 48px
+		color: #ffffff
+		font-size: 24px
+		font-family: "Proxima"
+		font-weight: 700
+		border: 1px solid $active-color
+		margin-bottom: 62px
+.slick-dots li button:before
+	content: ''
+	width: 12px
+	height: 12px
+	background-color: #d7d7d7
+	transition: all .3s ease
+.slick-dots li.slick-active button:before
+	background-color: $active-color
+.slick-dots
+	max-width: 150px
+	bottom: 3%
+	right: 8%
+.slick-current
+	&:active
+		border: none
+.main
+	.main-slider
+		margin-bottom: 0
+		
+.hidden
+	display: none
+
+.form-wrapper
+	display: flex
+	position: absolute
+	align-items: center
+	top: 100%
+	right: 0
+	width: 330px
+	height: 50px
+	z-index: 150
+	padding: 7px
+	background-color: rgba(0, 0, 0, .4)
+	border-radius: 5px
+	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2)
+	input
+		width: 200px
+		height: 35px
+		padding: 10px 5px
+		font-weight: 400
+		font-size: 15px
+		border: 0
+		background: #eee
+		border-radius: 3px 0 0 3px
+		&:focus
+			outline: 0
+			background: #fff
+			box-shadow: 0 0 2px rgba(0,0,0,.8) inset
+	button
+		border: 0
+		height: 35px
+		width: 110px
+		font-weight: 400
+		font-size: 15px
+		color: #fff
+		text-transform: uppercase
+		background: $active-color
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3)
+		&:active, &:focus
+			background-color: lighten($active-color, 5)

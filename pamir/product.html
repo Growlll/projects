@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.ico">
+
+  <title>Памир</title>
+
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+      try {
+        w.yaCounter50187580 = new Ya.Metrika2({
+          id: 50187580,
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true,
+          trackHash: true
+        });
+      } catch (e) {
+      }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+      n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js";
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+      f();
+    }
+  })(document, window, "yandex_metrika_callbacks2"); </script>
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/50187580" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript> <!-- /Yandex.Metrika counter -->
+
+<div class="overlay">
+  <div class="popup">
+    <div class="popup-title">Форма обратной связи</div>
+    <!-- /.popup-title -->
+    <div class="popup-close"> &times;</div>
+    <!-- /.popup-close -->
+    <div class="popup-form dark-bg">
+      <form action="mailer/smart.html" method="POST" class="main-form"
+            onsubmit="yaCounter50187580.reachGoal('callBack')">
+        <div class="popup-form-header">
+          Получите индивидуальное предложение
+          <span>на производство и поставку изделий</span>
+          <label for="phone" class="popup-form__label">
+            Введите ваш номер телефона:
+          </label>
+          <input type="tel" id="phone" class="popup-form__input" name="user_phone" placeholder="+7 (XXX) XXX-XXXX"
+                 required>
+          <button class="button popup-form__btn">
+            Оставить заявку!
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- /.popup-form -->
+  </div>
+  <!-- /.popup -->
+</div>
+<!-- /.overlay -->
+
+<nav class="header">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-2">
+        <div class="header-lang">
+          <a href="#menu" class="menu-link hidden-menu">
+            <span></span>
+          </a>
+
+          <div class="menu">
+            <ul>
+              <li><a href="#product">Продукция</a></li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#galery">Фотогалерея</a></li>
+              <li><a href="#news">Новости</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="header-lang__img hidden-mini">
+            <img src="img/header/header-lang__icon.png" alt="язык">
+          </div>
+
+          <ul class="header-lang__list hidden-mini">
+            <li class="header-lang__item">
+              <a href="#">ру</a>
+            </li>
+            <li class="header-lang__item">
+              <a href="#">eng</a>
+            </li>
+            <li class="header-lang__item">
+              <a href="#">fin</a>
+            </li>
+          </ul>
+
+          <div class="header-lang_mobile hidden-menu">
+            <select>
+              <option>rus</option>
+              <option>eng</option>
+              <option>fin</option>
+
+            </select>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-auto">
+
+        <div class="header-contacts">
+
+          <div class="header-phone__icon hidden-mini">
+            <img src="img/phone-icon.png" alt="phone">
+          </div>
+
+          <div class="header-contacts__phone">
+            <div class="header-phone">
+              <a href="tel:88005507307">8 (800) <span>550-73-07</span></a>
+            </div>
+
+            <div class="header-phone">
+              <a href="tel:+78124077330">+7 (812) <span>407-73-30</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="main">
+  <div class="search-mobile hidden-menu">
+    <form class="form-wrapper_mobile">
+      <input type="text" placeholder="Поиск" required>
+      <button type="submit">
+        <img src="img/header/header-search__icon.png" alt="Найти">
+      </button>
+    </form>
+    <button class="button header-note">
+      <img src="img/header/header-note__icon.png" alt="">
+    </button>
+
+  </div>
+
+
+  <div class="header-nav hidden-mini">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="header-logo hidden-mobile">
+          <a href="https://growlll.github.io/projects/pamir/index.html">
+            <img src="img/logo.png" alt="Лого">
+          </a>
+        </div>
+
+        <div class="header-menu hidden-mini">
+          <a href="product.html" class="header-item">Продукция</a>
+          <a href="advantages.html" class="header-item">О компании</a>
+          <a href="gallery.html" class="header-item">Фотогалерея</a>
+          <a href="news.html" class="header-item">Новости</a>
+          <a href="contacts.html" class="header-item">Контакты</a>
+        </div>
+
+        <button class="button header-note">
+          <img src="img/header/header-note__icon.png" alt="Добавить заметку">
+        </button>
+
+        <button class="button header-search__button">
+          <img src="img/header/header-search__icon.png" alt="Найти">
+        </button>
+      </div>
+    </div>
+    <div class="hidden">
+      <form class="form-wrapper">
+        <input type="text" placeholder="Поиск" required>
+        <button type="submit">Найти</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-slider">
+
+    <div class="main-slider__bg-1 dark-bg">
+      <div class="container">
+        <div class="main-slide__item">
+          <h1 class="main-text__title">
+            передвижные<br>
+            авиационные трапы
+          </h1>
+          <div class="main-text__subtitle">
+            Новейшие технологии, надежное качество
+          </div>
+          <button class="button button-main">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-slider__bg-2 dark-bg">
+      <div class="container">
+        <div class="main-slide__item">
+          <h1 class="main-text__title">
+            Не передвижные<br>
+            авиационные трапы
+          </h1>
+          <div class="main-text__subtitle">
+            Новейшие технологии, надежное качество
+          </div>
+          <button class="button button-main">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-slider__bg-3 dark-bg">
+      <div class="container">
+        <div class="main-slide__item">
+          <h1 class="main-text__title">
+            Разборные<br>
+            авиационные трапы
+          </h1>
+          <div class="main-text__subtitle">
+            Новейшие технологии, надежное качество
+          </div>
+          <button class="button button-main">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-slider__bg-1 dark-bg">
+      <div class="container">
+        <div class="main-slide__item">
+          <h1 class="main-text__title">
+            Трап алюминиевый<br>
+            для перехода
+          </h1>
+          <div class="main-text__subtitle">
+            Новейшие технологии, надежное качество
+          </div>
+          <button class="button button-main">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-slider__bg-5 dark-bg">
+      <div class="container">
+        <div class="main-slide__item">
+          <h1 class="main-text__title">
+            передвижные<br>
+            авиационные трапы
+          </h1>
+          <div class="main-text__subtitle">
+            Новейшие технологии, надежное качество
+          </div>
+          <button class="button button-main">Заказать</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div id="product" class="product">
+  <div class="container">
+    <div class="product-slider">
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-1.png" alt="Продукция">
+            <span>01</span>
+          </div>
+
+          <div class="product-title">
+            продукция<br>
+            для воздушного флота
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-2.png" alt="Продукция">
+            <span>02</span>
+          </div>
+
+          <div class="product-title">
+            продукция<br>
+            для речного, морского флота
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-3.png" alt="Продукция">
+            <span>03</span>
+          </div>
+
+          <div class="product-title">люльки, площадки</div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-4.png" alt="Продукция">
+            <span>04</span>
+          </div>
+
+          <div class="product-title">
+            оборудование<br>
+            для производств
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-1.png" alt="Продукция">
+            <span>05</span>
+          </div>
+
+          <div class="product-title">
+            продукция<br>
+            для воздушного флота
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-2.png" alt="Продукция">
+            <span>06</span>
+          </div>
+
+          <div class="product-title">
+            продукция<br>
+            для речного, морского флота
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-3.png" alt="Продукция">
+            <span>07</span>
+          </div>
+
+          <div class="product-title">люльки, площадки</div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product-item">
+        <div class="product-block">
+          <div class="product-img">
+            <img src="img/product/product_img-4.png" alt="Продукция">
+            <span>08</span>
+          </div>
+
+          <div class="product-title">
+            оборудование<br>
+            для производств
+          </div>
+
+          <div class="product-hidden">
+            <div class="product-menu">
+              <a href="">Cтремянки передвижные</a>
+              <a href="">Авиационные стремянки</a>
+              <a href="">Авиационные лестницы</a>
+              <a href="">Бортовые лестницы</a>
+            </div>
+
+            <a href="#">
+              <div class="product-other">Еще разделы</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+<div id="feedback" class="feedback dark-bg">
+  <div class="container">
+    <div class="feedback-title">Написать нам</div>
+
+    <div class="feedback-block">
+      <div class="feedback-form">
+        <form action="mailer/smart.php" method="POST"
+              onsubmit="yaCounter50187580.reachGoal('feedbackMessage')">
+
+          <input class="feedback-input" type="text" name="user_name" placeholder="Имя:*" required>
+
+          <input class="feedback-input" type="tel" name="user_phone" placeholder="Телефон:*" required>
+
+          <input class="feedback-input" type="email" name="email" placeholder="Email">
+
+          <textarea class="feedback-ta" name="message" placeholder="Сообщение"></textarea>
+
+          <div class="send">
+            <button class="button button-feedback">
+              Отправить
+            </button>
+            <div class="text">
+              <input class="comp" type="checkbox" checked required>Я согласен на обработку моих <a href="#"
+                                                                                                   class="text-send">персональных
+                данных</a></div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<div id="contacts" class="footer">
+  <div class="container">
+    <div class="footer-all">
+
+      <div class="footer-contacts hidden-menu">
+        <div class="footer-call">
+          <div class="footer-img">
+            <img src="img/phone-icon.png" alt="Фото">
+          </div>
+          <div class="footer-phones">
+            <a href="tel:88005507307" class="footer-phone">8 (800) 550-73-07</a>
+            <a href="tel:78124077330" class="footer-phone">+7 (812) 407-73-30</a>
+          </div>
+        </div>
+
+        <button class="button footer-button">Заказать звонок</button>
+        <div class="footer-address">
+          Россия, г. Санкт- Петербург <br>
+          наб. Обводного канала, д.148, к.2, оф.341
+        </div>
+
+        <div class="footer-map">
+          <a href="contacts.html">
+            <img src="img/footer/location.png" alt="Location">
+            На карте ›
+          </a>
+        </div>
+
+        <div class="footer-mail">
+          <a href="mailto:info@pak-pamit.com">info@pak-pamit.com</a>
+        </div>
+
+      </div>
+
+
+      <div class="block-menu">
+        <div class="footer-block">
+          <div class="footer-menu">
+            <div class="footer-title">Продукция</div>
+            <div class="footer-item"><a href="#">Для речного, морского флота</a></div>
+            <div class="footer-item"><a href="#">Для воздушного флота</a></div>
+            <div class="footer-item"><a href="#">Оборудование для производств</a></div>
+            <div class="footer-item"><a href="#">Люльки, площадки</a></div>
+            <div class="footer-item"><a href="#">Вышки-туры, строительные леса</a></div>
+            <div class="footer-item"><a href="#">Лестницы</a></div>
+          </div>
+
+          <div class="footer-menu">
+            <div class="footer-title">Документы</div>
+            <div class="footer-item"><a href="#">Лицензии и сертификаты</a></div>
+            <div class="footer-item"><a href="#">Стандарты продукции</a></div>
+            <div class="footer-item"><a href="#">Рекомендательные письма</a></div>
+            <div class="footer-item"><a href="#">Каталог продукции</a></div>
+            <div class="footer-item"><a href="#">Правила</a></div>
+          </div>
+
+        </div>
+
+        <div class="footer-rights">
+          <div class="rights">
+            © 2017 ООО «Алюминиевые конструкции» Все права защищены.
+          </div>
+          <div class="politics">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer-contacts hidden-mini">
+        <div class="footer-call">
+          <div class="footer-img">
+            <img src="img/phone-icon.png" alt="Фото">
+          </div>
+          <div class="footer-phones">
+            <a href="tel:88005507307" class="footer-phone">8 (800) 550-73-07</a>
+            <a href="tel:78124077330" class="footer-phone">+7 (812) 407-73-30</a>
+          </div>
+        </div>
+
+        <button class="button footer-button">Заказать звонок</button>
+        <div class="footer-address">
+          Россия, г. Санкт- Петербург <br>
+          наб. Обводного канала, д.148, к.2, оф.341
+        </div>
+
+        <div class="footer-map">
+          <a href="contacts.html">
+            <img src="img/footer/location.png" alt="Location">
+            На карте ›</a>
+        </div>
+
+        <div class="footer-mail"><a href="mailto:info@pak-pamit.com">info@pak-pamit.com</a></div>
+
+        <div class="footer-logo">
+          <a href="#"><img src="img/logo.png" alt="Логотип"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+  jQuery(function ($) {
+    $(".popup-form__input").mask("+7 (999) 999-9999");
+    $(".form__input").mask("+7 (999) 999-9999");
+  });
+</script>
+<script>
+
+  $(document).ready(function () {
+
+    $('.button-main').on('click', function () {
+      $('.overlay').show();
+    });
+
+    $('.button-subs').on('click', function () {
+      $('.overlay').show();
+    });
+
+    $('.footer-button').on('click', function () {
+      $('.overlay').show();
+    });
+
+    $('.header-note').on("click", function () {
+      $('.overlay').show();
+    });
+
+    $('.popup-close').on("click", function () {
+      $('.overlay').hide();
+    });
+
+
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+
+    $('.header-search__button').on('click', function () {
+      $('.hidden').fadeToggle('slow');
+    });
+
+    $('.video-play').on('click', function () {
+      $('.video-item img').fadeOut('slow');
+    });
+
+
+  });
+
+</script>
+
+
+<script src="slick/slick.min.js"></script>
+<script>
+  $('.main-slider').slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    focusOnSelect: false,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+</script>
+
+<script>
+  // продукция слайдер
+  $('.product-slider').slick({
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    focusOnSelect: false,
+    prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
+    nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+</script>
+<!-- Видео слайдер -->
+<script>
+  $('.video-slider').slick({
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    focusOnSelect: false,
+    prevArrow: '<div class="slider-arrow slider-arrow__video_left"></div>',
+    nextArrow: '<div class="slider-arrow slider-arrow__video_right"></div>',
+  });
+</script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+
+<!-- скрипт для отправки почты -->
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $('form').submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function () {
+      $(this).find("input").val("");
+      alert("Сообщение успешно отправлено");
+      $("form").trigger("reset");
+    });
+    return false;
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    var link = $('.menu-link');
+    var link_active = $('.menu-link_active');
+    var menu = $('.menu');
+    var nav_link = $('.menu a')
+
+    link.click(function () {
+      link.toggleClass('menu-link_active');
+      menu.toggleClass('menu_active')
+    });
+    nav_link.click(function () {
+      link.toggleClass('menu-link_active');
+      menu.toggleClass('menu_active');
+    });
+  });
+</script>
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+<script>
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [59.908155, 30.270800],
+        zoom: 17,
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Собственный значок метки',
+        balloonContent: 'Это красивая метка'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-icon.png',
+        // Размеры метки.
+        iconImageSize: [64, 64],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-32, -64]
+      });
+
+    myMap.behaviors.disable([
+      'multiTouch',
+      'drag',
+      'scrollZoom']);
+    myMap.geoObjects.add(myPlacemark);
+  });
+</script>
+
+</body>
+</html>
