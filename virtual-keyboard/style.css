@@ -1,0 +1,85 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #4a4aec;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 170px;
+    margin: 20px auto 20px;
+    border-radius: 10px;
+    background-color: #ddead4;
+    color: #000000;
+    font-size: 20px;
+    padding: 15px;
+    resize: none;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 970px;
+    height: 320px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #0099ff;
+}
+
+.keyboard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    background-color: #53bf00;
+    border-radius: 10px;
+}
+
+.keyboard div.last {
+    margin-right: 0;
+}
+
+.keyboard div.long {
+    width: 125px;
+}
+
+.keyboard div.verylong {
+    width: 320px;
+}
+
+.upper {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -12px;
+}
+
+/* анимация при нажатии кнопки */
+.pushed {
+    animation: push_button 0.3s;
+}
+
+@keyframes push_button {
+    0% {
+        background-color: #80ff27;
+    }
+    50% {
+        background-image: radial-gradient(#c8ff00, #88d773);
+    }
+    100% {
+        background-color: #a5ba56;
+    }
+}

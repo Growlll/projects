@@ -1,0 +1,125 @@
+.header
+	padding-top: 5px
+	padding-bottom: 5px
+	display: flex
+	width: 100%
+	background-color: #272727
+	&-lang
+		display: flex
+		height: 40px
+		width: 150px
+		&__img
+			display: flex
+			align-items: center
+			margin-right: 14px
+			height: 100%
+		&__list
+			display: flex
+			list-style: none
+			margin: 0
+			padding: 0
+		&__item
+			position: relative
+			margin-right: 11px
+			margin-top: 8px
+			font-weight: 400
+			font-size: 18px
+			line-height: 18px
+			letter-spacing: 0.18px
+			padding-right: 11px
+			&:after
+				position: absolute
+				content: ''
+				width: 1px
+				height: 13px
+				background-color: #7b7b7b
+				top: 6%
+				right: 0
+			&:first-child
+				padding-left: 0
+			&:last-child
+				margin-right: 0
+				padding-right: 0
+				border-right: none
+				&:after
+					display: none
+			a
+				color: #fff
+		&_mobile
+			margin-left: 25px
+			display: flex
+			align-items: center
+			select
+				background-color: #fff
+				border: none
+				border-radius: 1px
+	&-contacts
+		display: flex
+		align-items: center
+		height: 100%
+		&__phone
+			display: flex
+			a
+				color: #fff
+	&-phone
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		padding: 0 11px
+		font-weight: 400
+		font-size: 18px
+		&__icon
+			display: flex
+			align-items: center
+			margin-right: 15px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+			&:after
+				display: none
+	&-nav
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		display: flex
+		align-items: center
+		height: 100px
+		background-color: #2e2d2d
+		opacity: 0.9
+		z-index: 100
+	&-logo
+		display: flex
+		align-items: center
+		text-align: left
+		width: 17%
+		height: 100px
+		img
+			display: flex
+			align-items: center
+			width: 90px
+			height: 90px
+	&-menu
+		display: flex
+		list-style: none
+		a
+			padding: 37px 25px
+			font-size: 20px
+			font-weight: 700
+	&-item
+		display: flex
+		align-items: center
+		color: #fff
+	&-note, &-search__button
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 9%
+	&-note
+		background-color: $active-color
+		border: none
+	&-search__button
+		background-color: transparent
+		border: 1px solid #363636
