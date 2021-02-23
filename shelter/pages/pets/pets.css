@@ -358,7 +358,7 @@ a.inactive:hover {
   }
 
   .menu--mobile_active {
-    right: 0%;
+    right: 0;
   }
 
   .menu--mobile .menu__list {

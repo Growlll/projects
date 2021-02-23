@@ -340,7 +340,7 @@ a.inactive:hover {
   }
 
   .menu--mobile_active {
-    right: 0%;
+    right: 0;
   }
 
   .menu--mobile .menu__list {
@@ -677,13 +677,13 @@ a.friends__btn {
 
 .slider__item:hover {
   background: #fff;
-  box-shadow: 0px 2px 15px 14px rgba(13, 13, 13, 0.04);
+  box-shadow: 0 2px 15px 14px rgba(13, 13, 13, 0.04);
   cursor: pointer;
 }
 
 @media (min-width: 1280px) {
   .slider__item:hover {
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
   }
 }
 
