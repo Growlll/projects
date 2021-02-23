@@ -1,4 +1,3 @@
-// Slider
 let mySwiper = new Swiper('.slider', {
   loop: true,
   slidesPerView: 1,
